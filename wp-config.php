@@ -20,7 +20,7 @@
 
 // ** Veritabanı ayarları - Bu bilgileri servis sağlayıcınızdan alabilirsiniz ** //
 /** WordPress için kullanılacak veritabanının adı */
-define( 'DB_NAME', 'aku-test2' );
+define( 'DB_NAME', 'wordpress-development' );
 
 /** Veritabanı kullanıcısı */
 define( 'DB_USER', 'root' );

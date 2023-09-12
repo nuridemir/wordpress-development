@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /wordpress-block-developer/
+RewriteBase /wordpress-development/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wordpress-block-developer/index.php [L]
+RewriteRule . /wordpress-development/index.php [L]
 </IfModule>
 
 # END WordPress

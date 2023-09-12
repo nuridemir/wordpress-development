@@ -21,16 +21,18 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <?php 
-                     wp_nav_menu( 
-                        array( 
-                            'theme_location' => 'primary', 
-                            'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0',
-                            'container_class'=> 'collapse navbar-collapse', 
-                            'container_id'=> 'navbarSupportedContent'
-                        ) 
-                    ); 
-                     ?>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary',
+                            'menu_class' => 'navbar-nav',
+                            'container_class' => 'navbar-collapse collapse', // Bootstrap için gerekli sınıf ekleyin
+                            'container_id' => 'navbarNavDropdown', // Bootstrap için gerekli ID ekleyin
+                        )
+                    );
+                    ?>
+                </div>
 
 
                 <form class="d-flex" action="<?= site_url() ?>" method="get">

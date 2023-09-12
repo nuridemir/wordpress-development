@@ -1,5 +1,39 @@
 <?php
 
+// function register_nav(){
+// 	register_nav_menus(
+// 		array(
+// 			'header' => 'Header'
+// 		)
+// 	);
+// 	register_nav_menus(
+// 		array(
+// 			'footer' => 'Footer'
+// 		)
+// 	);
+// 	register_nav_menus(
+// 		array(
+// 			'404' => '404'
+// 		)
+// 	);
+// }
+
+// if(! function_exists('setup')):
+// 	function setup(){
+// 		register_nav();
+// 		add_theme_support('post-tumbnails');
+// 		add_image_size('team',475,475, array('center','center'));
+// 	}
+// endif;
+
+// function script_header(){
+// 	wp_enqueue_stored_styles('init', get_stylesheet_uri());
+// }
+// function script_footer(){
+// 	wp_enqueue_stored_styles('init', get_stylesheet_uri());
+// }
+
+
 
 
 if ( ! function_exists( 'mytheme_setup' ) ) {
@@ -102,39 +136,3 @@ function mytheme_scripts() {
 	wp_enqueue_script('custom',get_theme_file_uri('/assets/js/custom.js'));
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_scripts' );
-
-
-
-
-
-
-
-		// function my_sidebars(){
-		// 	register_sidebar(
-		// 		array(
-		// 			'name'=> 'Page sidebar',
-		// 			'id' => 'page-sidebar',
-		// 			'before-title' => "<h4 class='widget-title'>",
-		// 			'after-title' => "</h4>"
-		// 		)
-		// 	);
-		// }
-		// add_action( 'widget_init', "my_sidebars");
-
-
-		// function my_firts_post_type(){
-
-		// 	$args = array(	
-		// 		'labels' => array(
-		// 			'name' => 'Services',
-		// 			'singular_name' => 'Service'
-		// 		),
-		// 		'public' => true,
-		// 		'has_archive' => true,
-		// 		'supports' => array('title', 'editor', 'thumbnail')
-		// 	);
-
-		// 	register_post_type('services', $args);
-
-		// }
-		// add_action( 'init', 'my_firts_post_type' );
